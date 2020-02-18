@@ -7,7 +7,7 @@ import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { createHttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { WebSocketLink } from "apollo-link-ws";
+// import { WebSocketLink } from "apollo-link-ws";
 
 const httpLink = createHttpLink({
   uri: "http://gambilife.com/graphql"

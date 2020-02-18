@@ -34,6 +34,7 @@
   .betting-table {
     width: 100%;
     border-spacing: 0;
+    table-layout: fixed;
 
     thead {
       background-color: #275789;
@@ -98,18 +99,36 @@
           &:not(:first-child) {
             font-weight: bold;
           }
-
-          &:last-child {
-            color: #73fc7f;
-          }
         }
       }
     }
-  }
-}
 
-.d-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    .profit {
+      &--negative {
+        color: #fd7979;
+      }
+
+      &--positive {
+        color: #73fc7f;
+      }
+    }
+
+    .btc-container {
+      width: 10px;
+      height: 10px;
+      background-color: #fec41c;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-right: 3px;
+    }
+
+    .btc {
+      width: 6px;
+      height: 7px;
+      transform: rotate(5deg);
+    }
+  }
 }
