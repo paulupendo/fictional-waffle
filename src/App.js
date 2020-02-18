@@ -1,22 +1,24 @@
 import React from 'react';
-
-// components
-import Header from './components/Header';
-import BettingChart from './components/BettingChart';
-// styles
-import './App.scss';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <div className='fictional-waffle'>
-      <Header />
-      <div className='container d-flex'>
-        <div className='section'>Section 1</div>
-        <div className='section'>
-          <BettingChart />
-        </div>
-        <div className='section'>Section 3</div>
-      </div>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
