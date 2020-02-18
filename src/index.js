@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ApolloProvider } from "react-apollo";
@@ -13,12 +13,12 @@ const httpLink = createHttpLink({
   uri: "http://gambilife.com/graphql"
 });
 
-const wsLink = new WebSocketLink({
-  uri: `ws://localhost:5000/`,
-  options: {
-    reconnect: true
-  }
-});
+// const wsLink = new WebSocketLink({
+//   uri: `ws://gambilife.com/graphql/`,
+//   options: {
+//     reconnect: true
+//   }
+// });
 const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache()
