@@ -2,7 +2,7 @@ import React from 'react';
 
 import './svg-object.scss';
 
-const SvgObject = () => (
+const ClamComponent = () => (
   <div className='wrapper'>
     <div className='upper pointer'>
       <img className='upper-image' src='/assets/images/upper.svg' alt='upper-shell' />
@@ -14,4 +14,4 @@ const SvgObject = () => (
   </div>
 );
 
-export default SvgObject;
+export default ClamComponent;
