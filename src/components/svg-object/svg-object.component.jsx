@@ -1,16 +1,19 @@
 import React from 'react';
 
 import './svg-object.styles.scss';
-import upper from './../../assets/upper.svg';
-import bottom from './../../assets/bottom.svg';
 
 const SvgObject = () => (
 	<div className="wrapper">
 		<div className="upper">
-			<img className="upper-image" src={upper} alt="upper-shell" />
+			<img
+				className="upper-image"
+				src="/assets/images/upper.svg"
+				alt="upper-shell"
+			/>
 		</div>
-		<div className="bottom">
-			<img className="bottom-image" src={bottom} alt="bottom-shell" />
+
+		<div>
+			<img src="assets/images/bottom.svg" alt="bottom-shell" />
 		</div>
 	</div>
 );
