@@ -3,6 +3,7 @@ import React from 'react';
 // components
 import Header from './components/Header';
 import BettingChart from './components/BettingChart';
+import SvgObject from './components/svg-object/svg-object.component';
 // styles
 import './App.scss';
 
@@ -15,7 +16,9 @@ function App() {
         <div className='section d-flex'>
           <BettingChart />
         </div>
-        <div className='section'>Section 3</div>
+        <div className='section d-flex justify-center'>
+          <SvgObject />
+        </div>
       </div>
     </div>
   );
