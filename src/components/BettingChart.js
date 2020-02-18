@@ -1,6 +1,6 @@
-import React from "react";
-import { Query } from "react-apollo";
-import { BETS_QUERY } from "../graphql/queries";
+import React from 'react';
+import { Query } from 'react-apollo';
+import { BETS_QUERY } from '../graphql/queries';
 
 const BettingChart = () => (
   <Query query={BETS_QUERY}>
@@ -10,10 +10,10 @@ const BettingChart = () => (
 
       const bets = data.bets;
       return (
-        <table className="betting-table">
+        <table className='betting-table'>
           <thead>
             <tr>
-              <th>Time</th>
+              <th className='w-30'>Time</th>
               <th>Bet</th>
               <th>Multiplier</th>
               <th>Profit</th>
@@ -21,14 +21,37 @@ const BettingChart = () => (
           </thead>
 
           <tbody>
-            {bets.map(bet => (
-              <tr>
-                <td>{bet.time}</td>
-                <td>{bet.bet / 1000}</td>
-                <td>{bet.payout / 4}</td>
-                <td>{bet.profit / 1000}</td>
-              </tr>
-            ))}
+            {bets.map(bet => {
+              const profit = bet.profit / 1000;
+
+              return (
+                <tr key={bet.time}>
+                  <td>
+                    {new Date(bet.time)
+                      .toISOString()
+                      .split('.')[0]
+                      .replace('-', '.')
+                      .replace('T', ' ')}
+                  </td>
+                  <td className='d-flex'>
+                    <div className='btc-container'>
+                      <img src='/assets/images/Btc-sans.png' alt='bitcoin icon' className='btc' />
+                    </div>
+                    {bet.bet / 1000}
+                  </td>
+                  <td>
+                    <span className='fs-10'>x</span>
+                    {bet.payout / 4}
+                  </td>
+                  <td className={`profit--${profit > 0 ? 'positive' : 'negative'} d-flex`}>
+                    <div className='btc-container'>
+                      <img src='/assets/images/Btc-sans.png' alt='bitcoin icon' className='btc' />
+                    </div>
+                    {`${profit > 0 ? '+' : ''}${profit}`}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       );

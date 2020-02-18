@@ -4,3 +4,24 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #292929;
 }
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.pointer {
+  cursor: pointer;
+}
