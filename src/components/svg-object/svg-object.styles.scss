@@ -1,17 +1,10 @@
-* {
-	margin: 0 auto;
-	padding: 0;
-	box-sizing: border-box;
-}
 .wrapper {
 	position: relative;
-	margin: 20px auto;
-	display: flex;
 }
 .upper {
 	position: absolute;
-	bottom: 70px;
-	left: 617px;
+	top: 55px;
+	left: 35px;
 }
 .upper-image {
 	transition: all 1.5s ease-out;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './svg-object.styles.css';
+import './svg-object.styles.scss';
 import upper from './../../assets/upper.svg';
 import bottom from './../../assets/bottom.svg';
 

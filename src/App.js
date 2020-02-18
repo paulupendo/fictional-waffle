@@ -16,7 +16,7 @@ function App() {
 				<div className="section">
 					<BettingChart />
 				</div>
-				<div className="section">
+				<div className="section svg">
 					<SvgObject />
 				</div>
 			</div>
