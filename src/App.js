@@ -12,7 +12,7 @@ function App() {
       <Header />
       <div className='container d-flex'>
         <div className='section'>Section 1</div>
-        <div className='section'>
+        <div className='section d-flex'>
           <BettingChart />
         </div>
         <div className='section'>Section 3</div>

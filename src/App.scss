@@ -10,22 +10,23 @@
   }
 
   .container {
-    padding: 100px;
+    padding: 130px 50px;
   }
 
   .section {
     background-color: #525252;
     height: 700px;
-    width: 30%;
+    width: 25%;
     border-radius: 15px;
     padding: 15px;
     margin-right: 50px;
 
     &:not(:first-child):not(:last-child) {
-      width: 40%;
+      width: 50%;
+      padding: 15px 50px;
     }
 
-    &::last-child {
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -42,8 +43,9 @@
     }
 
     th {
-      font-weight: normal;
+      font-weight: lighter;
       text-align: left;
+      padding: 10px 0;
 
       &:first-child {
         padding-left: 30px;
@@ -71,10 +73,16 @@
     tbody {
       tr {
         background-color: #133252;
-        
+
         &:first-child {
           td {
             padding-top: 30px;
+          }
+        }
+
+        &:last-child {
+          td {
+            padding-bottom: 30px;
           }
         }
 
@@ -85,6 +93,14 @@
 
           &:first-child {
             padding-left: 30px;
+          }
+
+          &:not(:first-child) {
+            font-weight: bold;
+          }
+
+          &:last-child {
+            color: #73fc7f;
           }
         }
       }
