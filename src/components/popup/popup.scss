@@ -1,48 +1,48 @@
 .popup-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	position: fixed;
-	width: 100%;
-	z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 
-	.overlay {
-		top: 0%;
-		background-color: #000000;
-		opacity: 0.7;
-		position: fixed;
-		min-height: 100%;
-		width: 100%;
-		z-index: 3;
-	}
+  .overlay {
+    top: 0%;
+    background-color: #000000;
+    opacity: 0.7;
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+    z-index: 3;
+  }
 
-	.modal {
-		background-color: #2d4560;
-		height: 40vh;
-		width: 40vw;
-		border-radius: 5px;
-		color: white;
-		z-index: 3;
-	}
+  .modal {
+    background-color: #2d4560;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 5px;
+    color: white;
+    z-index: 3;
+  }
 
-	.header {
-		background-color: #113352;
-		padding: 10px;
-		font-weight: bold;
+  .header {
+    background-color: #113352;
+    padding: 10px;
+    font-weight: bold;
 
-		.confirm {
-			size: 10px;
-			text-transform: uppercase;
-		}
+    .confirm {
+      size: 10px;
+      text-transform: uppercase;
+    }
 
-		.cancel {
-			margin-left: auto;
-		}
-	}
+    .cancel {
+      margin-left: auto;
+    }
+  }
 
-	.body {
-		background-color: #2d4560;
-		padding: 10px;
-	}
+  .body {
+    background-color: #2d4560;
+    padding: 10px;
+  }
 }
