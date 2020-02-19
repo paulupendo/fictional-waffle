@@ -1,7 +1,4 @@
 .popup-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   position: fixed;
   width: 100%;
@@ -29,11 +26,11 @@
   .header {
     background-color: #113352;
     padding: 10px;
-    font-weight: bold;
 
     .confirm {
       size: 10px;
       text-transform: uppercase;
+      font-weight: bold;
     }
 
     .cancel {
@@ -41,7 +38,7 @@
     }
   }
 
-  .body {
+  .modal-body {
     background-color: #2d4560;
     padding: 10px;
   }

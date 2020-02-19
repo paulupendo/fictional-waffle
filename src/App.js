@@ -18,11 +18,10 @@ class App extends Component {
   };
   render() {
     const { isClicked } = this.state;
-    const handleClick = this.handleClick;
     return (
       <div className="fictional-waffle">
         {isClicked ? (
-          <PopUp handleClick={handleClick} isClicked={isClicked} />
+          <PopUp handleClick={this.handleClick} isClicked={isClicked} />
         ) : null}
         <Header />
 
@@ -32,7 +31,7 @@ class App extends Component {
             <BettingChart />
           </div>
           <div className="section d-flex justify-center">
-            <ClamComponent handleClick={handleClick} />
+            <ClamComponent handleClick={this.handleClick} />
           </div>
         </div>
       </div>
