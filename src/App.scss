@@ -43,17 +43,17 @@
       font-size: 15px;
       text-transform: uppercase;
       color: #7d9cc6;
-      tr {
-        display: block;
-      }
+      // tr {
+      //   display: block;
+      // }
     }
 
     th {
       font-weight: lighter;
       text-align: left;
       padding: 10px 0;
-      width:25%;
-      width: 12rem;
+      // width:25%;
+      // width: 12rem;
 
       &:first-child {
         padding-left: 30px;
@@ -79,10 +79,10 @@
     }
 
     tbody {
-      display: block;
-      width: 100%;
-      overflow: auto;
-      height: 24rem;
+      // display: block;
+      // width: 100%;
+      // overflow: auto;
+      // height: 24rem;
       tr {
         background-color: #133252;
 
@@ -102,7 +102,7 @@
           font-size: 13px;
           color: #fff;
           padding-bottom: 20px;
-          width: 12rem;
+          // width: 12rem;
 
           &:first-child {
             padding-left: 30px;
