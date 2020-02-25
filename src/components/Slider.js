@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class Slider extends Component {
   state = {
@@ -6,8 +6,8 @@ export default class Slider extends Component {
   };
 
   changeSlider = e => {
-    const selector = document.getElementById("selector");
-    const progressBar = document.getElementById("progress-bar");
+    const selector = document.getElementById('selector');
+    const progressBar = document.getElementById('progress-bar');
 
     selector.style.left = `${e.target.value}%`;
     progressBar.style.width = `${e.target.value}%`;
@@ -30,6 +30,8 @@ export default class Slider extends Component {
             step=".01"
             value={range}
           />
+          <span className="zero">0</span>
+          <span className="hundred">100</span>
           <div id="selector">
             <div className="select-button"></div>
             <div id="select-value">{range}</div>

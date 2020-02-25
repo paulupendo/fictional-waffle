@@ -159,11 +159,12 @@
   }
   #slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 146px;
-    height: 68px;
+    width: 68px;
+    height: 146px;
     cursor: pointer;
     z-index: 3;
     position: relative;
+    top: 15px;
   }
   #selector {
     height: 68px;
@@ -176,12 +177,12 @@
   .select-button {
     height: 68px;
     width: 146px;
-    background-image: url("/assets/images/slider.svg");
+    background-image: url('/assets/images/slider.svg');
     background-size: cover;
     background-position: center;
     position: absolute;
-    bottom: -3px;
-    left: -70px;
+    bottom: -2px;
+    left: -72px;
     transform: rotate(90deg);
   }
   #select-value {
@@ -199,10 +200,28 @@
   }
   #progress-bar {
     width: 50%;
-    height: 101.5px;
+    height: 100px;
+    outline: none;
     background-color: #fa6868;
     position: absolute;
-    top: 0;
+    top: 2px;
     bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .zero {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -30px;
+    color: white;
+    font-size: 20px;
+  }
+  .hundred {
+    position: absolute;
+    right: -5px;
+    transform: rotate(90deg);
+    top: -40px;
+    color: white;
+    font-size: 20px;
   }
 }
