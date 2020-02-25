@@ -30,6 +30,9 @@ body {
   align-items: flex-end;
 }
 .flex-direction-column {
-  display: flex;
   flex-direction: column;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }

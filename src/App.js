@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import BettingChart from './components/BettingChart';
 import ClamComponent from './components/svg-object/svg-object.component';
+import Slider from './components/Slider';
 import PopUp from './components/popup/popup.component';
 import Input from './components/input/input.component';
 // styles
@@ -27,7 +28,8 @@ class App extends Component {
         <Header />
 
         <div className="container d-flex">
-          <div className="section d-flex align-items-flex-end">
+          <div className="section d-flex flex-direction-column justify-end">
+            <Slider />
             <Input />
           </div>
           <div className="section d-flex">
