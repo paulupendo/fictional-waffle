@@ -181,8 +181,8 @@
     background-size: cover;
     background-position: center;
     position: absolute;
-    bottom: -3px;
-    left: -70px;
+    bottom: -4px;
+    left: -72px;
     transform: rotate(90deg);
   }
   #select-value {
@@ -201,6 +201,7 @@
   #progress-bar {
     width: 50%;
     height: 101.5px;
+    outline: none;
     background-color: #fa6868;
     position: absolute;
     top: 0;
