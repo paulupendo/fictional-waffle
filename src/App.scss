@@ -16,7 +16,7 @@
 
   .section {
     background-color: #525252;
-    height: 700px;
+    height: 650px;
     width: 25%;
     border-radius: 15px;
     padding: 15px;
@@ -43,12 +43,18 @@
       font-size: 15px;
       text-transform: uppercase;
       color: #7d9cc6;
+
+      tr {
+        display: flex;
+        justify-content: flex-start;
+      }
     }
 
     th {
       font-weight: lighter;
       text-align: left;
       padding: 10px 0;
+      width: 25%;
 
       &:first-child {
         padding-left: 30px;
@@ -74,8 +80,14 @@
     }
 
     tbody {
+      display: block;
+      width: 100%;
+      overflow: auto;
+      height: 22rem;
+
       tr {
         background-color: #133252;
+        display: flex;
 
         &:first-child {
           td {
@@ -90,9 +102,10 @@
         }
 
         td {
-          font-size: 13px;
+          font-size: 12px;
           color: #fff;
           padding-bottom: 20px;
+          width: 25%;
 
           &:first-child {
             padding-left: 30px;
@@ -135,11 +148,12 @@
   }
 
   .slider-container {
-    width: 100%;
-    margin-top: 40%;
+    width: 180%;
     position: relative;
+    margin-bottom: 60px;
     transform: rotate(270deg);
   }
+
   #slider {
     -webkit-appearance: none;
     width: 100%;
@@ -147,6 +161,7 @@
     outline: none;
     background-color: #6ff48d;
   }
+
   #slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 68px;
@@ -156,6 +171,7 @@
     position: relative;
     top: 15px;
   }
+
   #selector {
     height: 68px;
     width: 146px;
@@ -164,6 +180,7 @@
     left: 50%;
     z-index: 2;
   }
+
   .select-button {
     height: 68px;
     width: 146px;
@@ -175,6 +192,7 @@
     left: -72px;
     transform: rotate(90deg);
   }
+
   #select-value {
     width: 48px;
     height: 48px;
@@ -188,6 +206,7 @@
     transform: rotate(90deg);
     left: -25px;
   }
+
   #progress-bar {
     width: 50%;
     height: 100px;
@@ -199,6 +218,7 @@
     left: 0;
     right: 0;
   }
+
   .zero {
     position: absolute;
     transform: rotate(90deg);
@@ -206,6 +226,7 @@
     color: #fff;
     font-size: 20px;
   }
+
   .hundred {
     position: absolute;
     right: -5px;

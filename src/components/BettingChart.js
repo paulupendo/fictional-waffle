@@ -10,7 +10,9 @@ class BettingChart extends Component {
         if (!subscriptionData.data) return prev;
         const newBet = subscriptionData.data.betAdded;
         const exists = prev.bets.find(({ id }) => id === newBet.id);
+
         if (exists) return prev;
+
         return Object.assign({}, prev, {
           bets: [newBet, ...prev.bets]
         });

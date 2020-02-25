@@ -11,20 +11,24 @@
     width: 60%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+
     .bet-title {
       font-size: 14px;
       color: #80a2cc;
       margin-bottom: 3px;
       font-family: 'Roboto', regular;
     }
+
     .input-caret {
       width: 100%;
+
       .caret {
         width: 15px;
         height: 15px;
         background-color: #fec41c;
         border-radius: 50%;
         margin-right: 8px;
+
         .btc {
           width: 8px;
           height: 8px;
@@ -35,12 +39,14 @@
       }
     }
   }
+
   .middle {
     width: 20%;
     height: 100%;
     background-color: #275e9a;
     color: #fff;
   }
+
   .right-end {
     width: 20%;
     height: 100%;
@@ -50,6 +56,7 @@
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
   }
+
   input[type='number'] {
     background-color: #0a1a33;
     outline: none;
@@ -59,6 +66,7 @@
     font-size: 20px;
     width: 100%;
   }
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
