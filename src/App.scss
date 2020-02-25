@@ -7,6 +7,7 @@
     left: 0;
     height: 50px;
     background-color: #5da5ed;
+    z-index: 1;
   }
 
   .container {
@@ -42,18 +43,12 @@
       font-size: 15px;
       text-transform: uppercase;
       color: #7d9cc6;
-      tr {
-        display: block;
-        width: 100%;
-      }
     }
 
     th {
       font-weight: lighter;
       text-align: left;
       padding: 10px 0;
-      width: 25%;
-      width: 12rem;
 
       &:first-child {
         padding-left: 30px;
@@ -79,10 +74,6 @@
     }
 
     tbody {
-      display: block;
-      width: 100%;
-      overflow: auto;
-      height: 24rem;
       tr {
         background-color: #133252;
 
@@ -102,7 +93,6 @@
           font-size: 13px;
           color: #fff;
           padding-bottom: 20px;
-          width: 12rem;
 
           &:first-child {
             padding-left: 30px;

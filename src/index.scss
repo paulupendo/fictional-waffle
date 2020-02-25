@@ -19,9 +19,20 @@ body {
 }
 
 .w-30 {
-    width: 30%;
+  width: 30%;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }

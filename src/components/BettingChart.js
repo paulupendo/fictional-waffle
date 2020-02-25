@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Query } from "react-apollo";
-import { BETS_QUERY, BETS_SUBSCRIPTION } from "../graphql/queries";
+import React, { Component } from 'react';
+import { Query } from 'react-apollo';
+import { BETS_QUERY, BETS_SUBSCRIPTION } from '../graphql/queries';
 
 class BettingChart extends Component {
   subscribeToMoreBets = subscribeToMore => {
@@ -31,7 +31,7 @@ class BettingChart extends Component {
             <table className="betting-table">
               <thead>
                 <tr>
-                  <th>Time</th>
+                  <th className="w-30">Time</th>
                   <th>Bet</th>
                   <th>Multiplier</th>
                   <th>Profit</th>
@@ -47,9 +47,9 @@ class BettingChart extends Component {
                       <td>
                         {new Date(bet.time)
                           .toISOString()
-                          .split(".")[0]
-                          .replace("-", ".")
-                          .replace("T", " ")}
+                          .split('.')[0]
+                          .replace('-', '.')
+                          .replace('T', ' ')}
                       </td>
                       <td className="d-flex">
                         <div className="btc-container">
@@ -67,7 +67,7 @@ class BettingChart extends Component {
                       </td>
                       <td
                         className={`profit--${
-                          profit > 0 ? "positive" : "negative"
+                          profit > 0 ? 'positive' : 'negative'
                         } d-flex`}
                       >
                         <div className="btc-container">
@@ -77,7 +77,7 @@ class BettingChart extends Component {
                             className="btc"
                           />
                         </div>
-                        {`${profit > 0 ? "+" : ""}${profit}`}
+                        {`${profit > 0 ? '+' : ''}${profit}`}
                       </td>
                     </tr>
                   );
